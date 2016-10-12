@@ -1,0 +1,18 @@
+{
+    "name": "ugoku/sitemap-generator",
+    "description": "Sitemap generator",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Paweł Antczak",
+            "email": "pawel@antczak.org"
+        },
+        {
+            "name": "Ugoku",
+            "email": "github@ugoku.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
