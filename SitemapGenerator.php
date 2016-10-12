@@ -4,11 +4,11 @@
  * @package    SitemapGenerator
  * @author     Paweł Antczak <pawel@antczak.org>, Sander de Jong <github@ugoku.nl>
  * @copyright  2009 Paweł Antczak, 2016 Ugoku
- * @license    http://www.gnu.org/licenses/gpl.html  GPL V 2.0
+ * @license    https://www.gnu.org/licenses/gpl.html  GPL V 2.0
  * @version    2.0.0
  * @see        http://www.sitemaps.org/protocol.php
- * @see        http://en.wikipedia.org/wiki/Sitemaps
- * @see        http://en.wikipedia.org/wiki/Sitemap_index
+ * @see        https://en.wikipedia.org/wiki/Site_map
+ * @see        https://en.wikipedia.org/wiki/Sitemaps
  */
 namespace Ugoku;
 
@@ -80,9 +80,9 @@ class SitemapGenerator
     private $searchEngines = [
         ["http://search.yahooapis.com/SiteExplorerService/V1/updateNotification?appid=USERID&url=",
         "http://search.yahooapis.com/SiteExplorerService/V1/ping?sitemap="],
-        "http://www.google.com/webmasters/tools/ping?sitemap=",
+        "https://www.google.com/webmasters/tools/ping?sitemap=",
         "http://submissions.ask.com/ping?sitemap=",
-        "http://www.bing.com/webmaster/ping.aspx?siteMap="
+        "https://www.bing.com/webmaster/ping.aspx?siteMap="
     ];
     /**
      * Array with urls
@@ -155,8 +155,8 @@ class SitemapGenerator
      *
      * @throws \InvalidArgumentException
      *
-     * @see http://en.wikipedia.org/wiki/ISO_8601
-     * @see http://php.net/manual/en/function.date.php
+     * @see https://en.wikipedia.org/wiki/ISO_8601
+     * @see https://secure.php.net/manual/en/function.date.php
      */
     public function addUrl($url, $lastModified = null, $changeFrequency = null, $priority = null)
     {
@@ -194,7 +194,7 @@ class SitemapGenerator
         }
 
         $generatorInfo = '<!-- generator="SimpleSitemapGenerator/'.$this->classVersion.'" -->
-                          <!-- sitemap-generator-url="http://www.antczak.org"
+                          <!-- sitemap-generator-url="https://github.com/Ugoku/php-sitemap-generator"
                           sitemap-generator-version="'.$this->classVersion.'" -->
                           <!-- generated-on="'.date('c').'" -->';
         $sitemapHeader = '<?xml version="1.0" encoding="UTF-8"?>'.$generatorInfo.'
